@@ -1,3 +1,4 @@
+#include <Arduino.h>
 void le_umidade_temperatura(){
 //Leitura de humidade e temperatura podem levar até 250ms! Tempo de resposta(dados prontos para uso) podem levar até 2s
   umidade = dht.readHumidity();

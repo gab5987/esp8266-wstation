@@ -1,6 +1,9 @@
-#define debug
+#include <Arduino.h>
+#include "src/incs.h"
+//#define debug
+
 // Preparação do sensor DHT11
-#include "DHT.h"
+#include "lib/DHT_sensor_library/DHT.h"
 #define DHTPIN 4 //pino digital conectado ao DHT11 (gpio4 - d2)
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
