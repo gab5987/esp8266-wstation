@@ -5,11 +5,12 @@ void read_humidity_temperature(){ //Readings of humidity and temperature may tak
   tempF = dht.readTemperature(true); //Reads temperature in celcius
 
   //Runs a data sanity check
+  #ifdef test
   if (isnan(hu) || isnan(tempC)) {
     Serial.println(F("Sensor failure!"));
     return;
   }
-
+  #endif
   //Calculate temperature index using celcius
   temp_index = dht.computeHeatIndex(tempC, hu, false);
 }

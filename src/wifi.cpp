@@ -24,10 +24,12 @@ void send_thingspeak(String string_data){
 }
 
 void init_wifi(void){
+    #ifdef test
     Serial.println("------WI-FI -----");
     Serial.println("Conecting to: ");
     Serial.println(SSID_NET);
     Serial.println("\nPlease wait...");
+    #endif
  
     conect_wifi();
 }

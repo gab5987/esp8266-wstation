@@ -1,12 +1,10 @@
 #include <Arduino.h>
 #include "src/incs.h"
 #include <ESP8266WiFi.h>
-
-// Preparação do sensor DHT11
-#include "lib/DHT_sensor_library/DHT.h"
-
 #define test
-// Preparação do sensor DHT11
+
+// init DHT11 sensor lib
+#include "lib/DHT_sensor_library/DHT.h"
 #include "DHT.h"
 #define DHTPIN 4 //pino digital conectado ao DHT11 (gpio4 - d2)
 #define DHTTYPE DHT11
